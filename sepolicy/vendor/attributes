@@ -2,3 +2,6 @@
 attribute hal_oppo;
 attribute hal_oppo_client;
 attribute hal_oppo_server;
+
+
+hal_attribute_lineage(dms)
