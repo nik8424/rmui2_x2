@@ -35,5 +35,5 @@ BUILD_FINGERPRINT := "google/cheetah/cheetah:13/TQ3A.230805.001/10316531:user/re
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-Build type gapps
+# Build type
 lineage_BUILD_VARIANT := gapps
