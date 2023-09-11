@@ -8,6 +8,7 @@ allow rild unlabeled:dir { search };
 allow rild vendor_data_file:dir { getattr write add_name };
 allow rild vendor_data_file:file create_file_perms;
 
+
 get_prop(rild, oppo_debug_prop);
 
 get_prop(rild, default_prop);
