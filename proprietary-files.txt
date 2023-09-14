@@ -1363,8 +1363,11 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|52f410430054a012a983529b0ee1ed3b68
 vendor/bin/ssr_setup|38705dd33487011473d0d3a0add5fd97ac71469e
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.qti
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@2.0-service.qti.rc
 vendor/etc/init/init_thermal-engine.rc
+vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml
 vendor/etc/thermal-engine.conf
 vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
