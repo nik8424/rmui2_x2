@@ -44,11 +44,11 @@
     <item name="config_brightnessRampRateFastFloat" format="float" type="dimen">0.4058823</item>
 
     <!-- Light sensor event rate in milliseconds for automatic brightness control. -->
-    <integer name="config_autoBrightnessLightSensorRate">200</integer>
+    <integer name="config_autoBrightnessLightSensorRate">500</integer>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
-    <fraction name="config_autoBrightnessAdjustmentMaxGamma">150.0%</fraction>
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">200.0%</fraction>
 
     <!-- Whether or not to skip the initial brightness ramps when the display transitions to
          STATE_ON. Setting this to true will skip the brightness ramp to the last stored active
