@@ -421,6 +421,10 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
@@ -442,4 +446,4 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 
 # Google Basic apps
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+# $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
