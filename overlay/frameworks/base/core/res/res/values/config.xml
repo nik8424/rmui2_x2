@@ -979,6 +979,12 @@
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Wifi driver supports IEEE80211AC for softap -->
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
+
+    <!-- Enable ACS (auto channel selection) for softap -->
+    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
