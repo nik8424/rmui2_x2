@@ -449,4 +449,4 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 
 # Google Basic apps
-# $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
