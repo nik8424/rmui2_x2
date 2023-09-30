@@ -934,8 +934,10 @@
         <item>mobile_fota,10,0,2,300000,true</item>
         <item>mobile_ims,11,0,2,300000,true</item>
         <item>mobile_cbs,12,0,2,300000,true</item>
+        <item>"mobile_ia,14,0,2,-1,true"</item>
         <item>bluetooth,7,7,2,-1,true</item>
         <item>ethernet,9,9,4,-1,true</item>
+        <item>"mobile_emergency,15,0,5,-1,true</item>
     </string-array>
 
     <!-- This string array should be overridden by the device to present a list of radio
@@ -1204,6 +1206,7 @@
         <item>1</item>
         <item>7</item>
         <item>0</item>
+        <item>5</item>
     </integer-array>
 
     <!-- Config determines whether to update phone object when voice registration
