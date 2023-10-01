@@ -1010,7 +1010,7 @@
     <bool name="config_wifi_link_probing_supported">true</bool>
 
     <!-- Enable ACS (auto channel selection) for softap -->
-    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+    <bool translatable="false" name="config_wifi_softap_acs_supported">false</bool>
 
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
