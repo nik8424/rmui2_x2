@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    NexusLauncherRelease \
+    Settings \
     SystemUIGoogle
 
 # Dex
