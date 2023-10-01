@@ -17,6 +17,7 @@ persist.vendor.data.profile_update=true
 
 # Display
 debug.sf.enable_hwc_vds=1
+persist.sys.brightness.low.gamma=true
 
 # DPM
 persist.vendor.dpm.feature=1
