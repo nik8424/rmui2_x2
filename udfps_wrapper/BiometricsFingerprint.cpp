@@ -199,7 +199,6 @@ Return<uint64_t> BiometricsFingerprint::preEnroll() {
 
 Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid, uint32_t timeoutSec) {
     isEnrolling = true;
-    setFingerprintScreenState(true);
     return OplusToAOSPRequestStatus(mOplusBiometricsFingerprint->enroll(hat, gid, timeoutSec));
 }
 
