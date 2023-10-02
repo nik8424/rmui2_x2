@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
 
+#LOW Gamma for brightness curve
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.brightness.low.gamma=true
+
 # DotKiller
 PRODUCT_PACKAGES += \
     DotKiller
