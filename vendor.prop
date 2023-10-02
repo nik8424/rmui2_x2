@@ -307,6 +307,7 @@ vendor.usb.use_ffs_mtp=0
 vendor.usb.product_string=Realme X2
 
 # Wi-Fi
+ro.vendor.net.enable_dual_wifi=1
 wifi.aware.interface=wifi-aware0
 
 # Zygote
