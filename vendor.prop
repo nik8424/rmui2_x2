@@ -82,6 +82,12 @@ vendor.audio.feature.usb_offload.enable=true
 vendor.audio.feature.usb_offload_sidetone_volume.enable=false
 vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
+ro.audio.usb.period_us=20375
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
 
 # ART
 pm.dexopt.ab-ota=speed-profile
@@ -121,6 +127,7 @@ persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.service.bdroid.soc.alwayson=true
 ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
+persist.bluetooth.sbc_hd_higher_bitrate=1
 
 # Camera
 ro.camera.hfr.enable=1
