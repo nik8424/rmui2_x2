@@ -108,6 +108,9 @@ ODM_MANIFEST_SKUS += \
     has_nfc
 ODM_MANIFEST_HAS_NFC_FILES := $(DEVICE_PATH)/manifest_has_nfc.xml
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Media
 TARGET_USES_ION := true
 
