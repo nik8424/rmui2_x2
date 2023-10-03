@@ -34,7 +34,7 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- Timeout (in milliseconds) after which we remove the effects any user interactions might've
@@ -131,6 +131,73 @@
         <item>4000</item>
         <item>4500</item>
     </integer-array>
+
+    <!-- Array of output values for LCD backlight corresponding to the lux values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         The brightness values must be between 0 and 255 and be non-decreasing.
+         This must be overridden in platform specific overlays -->
+    <array name="config_autoBrightnessLcdBacklightValues">
+        <item>40</item>
+        <item>40</item>
+        <item>44</item>
+        <item>136</item>
+        <item>198</item>
+        <item>256</item>
+        <item>280</item>
+        <item>374</item>
+        <item>486</item>
+        <item>620</item>
+        <item>664</item>
+        <item>668</item>
+        <item>672</item>
+        <item>674</item>
+        <item>676</item>
+        <item>678</item>
+        <item>682</item>
+        <item>686</item>
+        <item>688</item>
+        <item>692</item>
+        <item>694</item>
+        <item>698</item>
+        <item>700</item>
+        <item>704</item>
+        <item>706</item>
+        <item>714</item>
+        <item>726</item>
+        <item>736</item>
+        <item>748</item>
+        <item>758</item>
+        <item>772</item>
+        <item>788</item>
+        <item>794</item>
+        <item>812</item>
+        <item>818</item>
+        <item>828</item>
+        <item>848</item>
+        <item>858</item>
+        <item>866</item>
+        <item>886</item>
+        <item>894</item>
+        <item>906</item>
+        <item>920</item>
+        <item>934</item>
+        <item>946</item>
+        <item>1122</item>
+        <item>1286</item>
+        <item>1478</item>
+        <item>1676</item>
+        <item>1854</item>
+        <item>2100</item>
+        <item>2292</item>
+        <item>2412</item>
+        <item>3020</item>
+        <item>3556</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+    </array>
+
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
@@ -1423,4 +1490,9 @@
 
     <!-- Boost Framework -->
     <bool name="config_supportsBoostFramework">true</bool>
+
+        <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+         manually by the user. Off by default, since the expected haptic feedback may not be
+         available on some devices. -->
+    <bool name="config_enableHapticTextHandle">true</bool>
 </resources>
