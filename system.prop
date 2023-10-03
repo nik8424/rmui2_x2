@@ -5,9 +5,6 @@ dalvik.vm.image-dex2oat-filter=everything
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
-# Camera
-vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam
-
 # Charger
 ro.charger.enable_suspend=true
 
