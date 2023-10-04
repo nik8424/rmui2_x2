@@ -351,6 +351,9 @@
     <ctl name="RX_RX0 Digital Volume" value="84" />
     <ctl name="RX_RX1 Digital Volume" value="84" />
     <ctl name="RX_RX2 Digital Volume" value="84" />
+    <ctl name="RX_RX3 Digital Volume" value="84" />
+    <ctl name="RX_RX4 Digital Volume" value="84" />
+    <ctl name="RX_RX5 Digital Volume" value="84" />
     <ctl name="HPHL Volume" value="15" />
     <ctl name="HPHR Volume" value="15" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
