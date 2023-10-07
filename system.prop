@@ -95,6 +95,7 @@ persist.nfc.smartcard.recorder.enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
+persist.sys.radio.force_lte_ca=true
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableIMSLogs=1
