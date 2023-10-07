@@ -61,6 +61,30 @@ ro.media.recorder-max-base-layer-fps=60
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
+ro.min_pointer_dur=1
+ro.securestorage.knox=false
+windowsmgr.max_events_per_sec=150
+ro.vendor.perf.scroll_opt=true
+touch.pressure.scale=0.1
+debug.sf.disable_backpressure=1
+debug.kill_allocating_task=0
+force_hw_ui=true
+ro.product.gpu.driver=1
+ENFORCE_PROCESS_LIMIT=false
+ro.wmt.blcr.enable=0
+persist.sys.use_dithering=0
+persist.sys.use_16bpp_alpha=1
+debug.performance.tuning=1
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
+ro.HOME_APP_ADJ = 1
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+persist.purgeable_assets=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+net.dns1=1.1.1.1
+net.dns2=1.0.0.1
 
 #Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
