@@ -1,0 +1,11 @@
+on init
+    # Enable decimal charging
+    chmod 0666 /proc/ui_soc_decimal
+    chown system system /proc/ui_soc_decimal
+    write /proc/ui_soc_decimal 1
+
+on boot
+
+    # Enable OTG by default
+    write /sys/class/power_supply/usb/otg_switch 1
+
