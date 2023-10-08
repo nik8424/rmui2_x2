@@ -48,9 +48,9 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_DC_SWITCH = "dc";
     public static final String KEY_OTG_SWITCH = "otg";
     public static final String KEY_GAME_SWITCH = "game";
-    public static final String KEY_CHARGING_SWITCH = "smart_charging";
+    // public static final String KEY_CHARGING_SWITCH = "smart_charging";
     public static final String KEY_CHARGING_SPEED = "charging_speed";
-    public static final String KEY_RESET_STATS = "reset_stats";
+    // public static final String KEY_RESET_STATS = "reset_stats";
     public static final String KEY_DND_SWITCH = "dnd";
     public static final String KEY_CABC = "cabc";
     public static final String CABC_SYSTEM_PROPERTY = "persist.cabc_profile";
@@ -59,15 +59,15 @@ public class DeviceSettings extends PreferenceFragment
     public static final String TP_LIMIT_ENABLE = "/proc/touchpanel/oplus_tp_limit_enable";
     public static final String TP_DIRECTION = "/proc/touchpanel/oplus_tp_direction";
     private static final String ProductName = Utils.ProductName();
-    private static final String KEY_CATEGORY_CHARGING = "charging";
+    // private static final String KEY_CATEGORY_CHARGING = "charging";
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";
     private static final String KEY_CATEGORY_REFRESH_RATE = "refresh_rate";
     public static SecureSettingListPreference mChargingSpeed;
-    public static TwoStatePreference mResetStats;
+    // public static TwoStatePreference mResetStats;
     public static TwoStatePreference mRefreshRate90Forced;
     public static RadioButtonPreference mRefreshRate90;
     public static RadioButtonPreference mRefreshRate60;
-    public static SeekBarPreference mSeekBarPreference;
+    // public static SeekBarPreference mSeekBarPreference;
     public static DisplayManager mDisplayManager;
     private static NotificationManager mNotificationManager;
     public TwoStatePreference mDNDSwitch;
@@ -77,7 +77,7 @@ public class DeviceSettings extends PreferenceFragment
     private TwoStatePreference mHBMModeSwitch;
     private TwoStatePreference mOTGModeSwitch;
     private TwoStatePreference mGameModeSwitch;
-    private TwoStatePreference mSmartChargingSwitch;
+    // private TwoStatePreference mSmartChargingSwitch;
     private SwitchPreference mFpsInfo;
     private boolean CABC_DeviceMatched;
     private boolean DC_DeviceMatched;
@@ -121,22 +121,22 @@ public class DeviceSettings extends PreferenceFragment
         mDNDSwitch.setChecked(prefs.getBoolean(KEY_DND_SWITCH, false));
         mDNDSwitch.setOnPreferenceChangeListener(this);
 
-        mSmartChargingSwitch = findPreference(KEY_CHARGING_SWITCH);
-        mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
-        mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
-
-        mChargingSpeed = findPreference(KEY_CHARGING_SPEED);
-        mChargingSpeed.setEnabled(mSmartChargingSwitch.isChecked());
-        mChargingSpeed.setOnPreferenceChangeListener(this);
-
-        mResetStats = findPreference(KEY_RESET_STATS);
-        mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
-        mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
-        mResetStats.setOnPreferenceChangeListener(this);
-
-        mSeekBarPreference = findPreference("seek_bar");
-        mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
-        SeekBarPreference.mProgress = prefs.getInt("seek_bar", 95);
+        // mSmartChargingSwitch = findPreference(KEY_CHARGING_SWITCH);
+        // mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
+        // mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
+        //
+        // mChargingSpeed = findPreference(KEY_CHARGING_SPEED);
+        // mChargingSpeed.setEnabled(mSmartChargingSwitch.isChecked());
+        // mChargingSpeed.setOnPreferenceChangeListener(this);
+        //
+        // mResetStats = findPreference(KEY_RESET_STATS);
+        // mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
+        // mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
+        // mResetStats.setOnPreferenceChangeListener(this);
+        //
+        // mSeekBarPreference = findPreference("seek_bar");
+        // mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
+        // SeekBarPreference.mProgress = prefs.getInt("seek_bar", 95);
 
         mRefreshRate90Forced = findPreference("refresh_rate_90Forced");
         mRefreshRate90Forced.setChecked(prefs.getBoolean("refresh_rate_90Forced", false));
@@ -167,7 +167,7 @@ public class DeviceSettings extends PreferenceFragment
             mRefreshRate90Forced.setEnabled(false);
         }
 
-        isCoolDownAvailable();
+        // isCoolDownAvailable();
         DisplayRefreshRateModes();
         try {
             ParseJson();
@@ -203,10 +203,10 @@ public class DeviceSettings extends PreferenceFragment
             }
         }
 
-        if (preference == mChargingSpeed) {
-            mChargingSpeed.setValue((String) newValue);
-            mChargingSpeed.setSummary(mChargingSpeed.getEntry());
-        }
+        // if (preference == mChargingSpeed) {
+        //     mChargingSpeed.setValue((String) newValue);
+        //     mChargingSpeed.setSummary(mChargingSpeed.getEntry());
+        // }
 
         if (preference == mCABC) {
             mCABC.setValue((String) newValue);
@@ -217,17 +217,17 @@ public class DeviceSettings extends PreferenceFragment
     }
 
     // Remove Charging Speed preference if cool_down node is unavailable
-    private void isCoolDownAvailable() {
-        mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_CHARGING);
-
-        if (Utils.fileWritable(SmartChargingService.mmi_charging_enable)) {
-            if (!Utils.fileWritable(SmartChargingService.cool_down)) {
-                mPreferenceCategory.removePreference(findPreference(KEY_CHARGING_SPEED));
-            }
-        } else {
-            getPreferenceScreen().removePreference(mPreferenceCategory);
-        }
-    }
+    // private void isCoolDownAvailable() {
+    //     mPreferenceCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_CHARGING);
+    //
+    //     if (Utils.fileWritable(SmartChargingService.mmi_charging_enable)) {
+    //         if (!Utils.fileWritable(SmartChargingService.cool_down)) {
+    //             mPreferenceCategory.removePreference(findPreference(KEY_CHARGING_SPEED));
+    //         }
+    //     } else {
+    //         getPreferenceScreen().removePreference(mPreferenceCategory);
+    //     }
+    // }
 
     // Remove display refresh rate modes category if display doesn't support 90hz
     private void DisplayRefreshRateModes() {
