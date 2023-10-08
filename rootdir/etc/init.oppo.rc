@@ -9,3 +9,5 @@ on boot
     # Enable OTG by default
     write /sys/class/power_supply/usb/otg_switch 1
 
+    # Charger
+    chown system system /sys/class/power_supply/battery/mmi_charging_enable
