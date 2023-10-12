@@ -1600,4 +1600,9 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+    <!-- Safe headphone volume index. When music stream volume is below this index
+    the SPL on headphone output is compliant to EN 60950 requirements for portable music
+    players. -->
+    <integer name="config_safe_media_volume_index">17</integer>
+
 </resources>
