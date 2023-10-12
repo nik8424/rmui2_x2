@@ -52,6 +52,12 @@ persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 debug.sf.disable_client_composition_cache=1
 
+# IORap app launch prefetching using Perfetto traces and madvise
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 audio.offload.video=true
