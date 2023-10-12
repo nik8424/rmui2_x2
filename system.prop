@@ -2,6 +2,10 @@
 dalvik.vm.dex2oat-filter=everything
 dalvik.vm.image-dex2oat-filter=everything
 
+# Audio
+ro.config.media_vol_default=8
+ro.config.media_vol_steps=25
+
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
