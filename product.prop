@@ -4,6 +4,9 @@ ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
 
+#Display
+vendor.gralloc.enable_fb_ubwc=1
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
