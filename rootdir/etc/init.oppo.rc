@@ -11,3 +11,7 @@ on boot
 
     # Charger
     chown system system /sys/class/power_supply/battery/mmi_charging_enable
+
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system

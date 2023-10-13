@@ -1428,4 +1428,8 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
+    <!-- Whether device supports Dolby -->
+    <bool name="config_deviceSupportsDolby">true</bool>
+
+
 </resources>

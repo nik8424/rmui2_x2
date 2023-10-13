@@ -94,6 +94,8 @@
         <effect name="shoebox" library="shoebox" uuid="1eab784c-1a36-4b2a-b7fc-e34c44cab89e"/>
     </effects>
     <postprocess>
+        <stream type="system">
+        </stream>
         <stream type="music">
             <apply effect="music_helper"/>
         </stream>
