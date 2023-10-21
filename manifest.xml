@@ -215,6 +215,12 @@
         <fqname>@1.0::IDspService/dspservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IIWlan/slot1</fqname>
+        <fqname>@1.0::IIWlan/slot2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.embmssl</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IEmbms/embmsslServer0</fqname>
@@ -291,6 +297,18 @@
         <transport>hwbinder</transport>
         <fqname>@1.3::IHidlVppService/vppService</fqname>
     </hal>
+<!--     temp -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.hostapd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IHostapdVendor/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::ISupplicantVendor/default</fqname>
+    </hal>
+<!--     end -->
     <hal format="hidl">
         <name>vendor.qti.hardware.wifi.wifilearner</name>
         <transport>hwbinder</transport>
