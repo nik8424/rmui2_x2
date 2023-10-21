@@ -264,7 +264,9 @@ vendor.media.target.version=2
 
 # Netmgr
 persist.vendor.data.iwlan.enable=true
-ro.telephony.iwlan_operation_mode=legacy
+persist.vendor.data.mode=concurrent
+ro.telephony.iwlan_operation_mode=default
+ro.vendor.use_data_netmgrd=true
 
 # NFC
 ro.hardware.nfc_nci=nqx.default
