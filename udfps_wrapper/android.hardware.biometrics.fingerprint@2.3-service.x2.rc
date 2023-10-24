@@ -1,5 +1,3 @@
-    task_profiles ProcessCapacityHigh HighPerformance
-
 on boot
     #for goodix_fp.
     chown system system /dev/goodix_fp
@@ -52,3 +50,4 @@ service vendor.fps_hal.x2 /vendor/bin/hw/android.hardware.biometrics.fingerprint
     class late_start
     user system
     group system input uhid
+    task_profiles ProcessCapacityHigh HighPerformance
