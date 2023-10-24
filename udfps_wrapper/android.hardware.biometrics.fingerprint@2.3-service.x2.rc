@@ -1,3 +1,5 @@
+    task_profiles ProcessCapacityHigh HighPerformance
+
 on boot
     #for goodix_fp.
     chown system system /dev/goodix_fp
