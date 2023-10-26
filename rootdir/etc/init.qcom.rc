@@ -91,6 +91,10 @@ on early-init
     # exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
     #endif /*OPLUS_BUG_STABILITY*/
 
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
 on init
 
     # Support legacy paths
