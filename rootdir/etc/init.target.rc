@@ -54,6 +54,9 @@ on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
 on early-fs
     start vold
 
