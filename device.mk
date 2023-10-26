@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
@@ -500,3 +504,6 @@ $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 
 # Google Basic apps
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
+#Inherit Realme Camera
+# $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
