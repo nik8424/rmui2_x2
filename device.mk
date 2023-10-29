@@ -463,6 +463,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/textclassifier/textclassifier.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.universal.model
 
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
