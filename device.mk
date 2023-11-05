@@ -478,22 +478,12 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
-    android.hardware.wifi@1.5.vendor \
-    android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.hostapd@1.0.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.1.vendor \
-    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.0.vendor \
-    vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor \
     libwpa_client \
     wpa_supplicant \
-    wpa_supplicant.conf \
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
