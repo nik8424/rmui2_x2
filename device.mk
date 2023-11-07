@@ -139,7 +139,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     NexusLauncherRelease \
     Settings \
-    SystemUIGoogle
+    SystemUI
 
 # Dex
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
