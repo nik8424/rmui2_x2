@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@7.1-impl \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.1-impl \
     audio.bluetooth.default \
@@ -503,7 +503,7 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 
 # Google Basic apps
-# $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 #Inherit Realme Camera
 # $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
