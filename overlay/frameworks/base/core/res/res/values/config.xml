@@ -1405,7 +1405,6 @@
 	    <item>"/system_ext/priv-app/MotoDolbyDax3/MotoDolbyDax3.apk"</item>
 	    <item>"/system_ext/priv-app/daxService/daxService.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
 	<!-- Should the pinner service pin the Camera application? -->
@@ -1430,7 +1429,6 @@
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
 
 	<!-- Whether device supports double tap to wake -->
