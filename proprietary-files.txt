@@ -810,7 +810,6 @@ vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 vendor/lib/hw/vulkan.adreno.so|a77dc4decf18a8bb0cf01d58e6901e842650de8a
 vendor/lib64/hw/vulkan.adreno.so|cf6f99a6109b5f4108a631caa0cdd221b70263ad
 
-
 # Graphics firmware
 vendor/firmware/a612_rgmu.bin
 vendor/firmware/a612_zap.b00
