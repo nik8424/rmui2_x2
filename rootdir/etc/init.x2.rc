@@ -41,5 +41,3 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
 
 on property:vendor.post_boot.parsed=1
 
-# Enable suspend to RAM
-    write /sys/power/mem_sleep "deep"
