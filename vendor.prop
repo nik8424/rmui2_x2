@@ -155,10 +155,6 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heapstartsize=8m
 dalvik.vm.heaptargetutilization=0.75
 
-# Display
-debug.sf.disable_client_composition_cache=1
-ro.surface_flinger.enable_layer_caching=true
-
 # Display post-processing
 ro.vendor.display.sensortype=2
 
