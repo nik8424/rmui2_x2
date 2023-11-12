@@ -501,3 +501,6 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 #Inherit Realme Camera
 # $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
+
+# Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
