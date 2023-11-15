@@ -1526,6 +1526,9 @@
      <!-- Whether device has VOOC charging support -->
     <bool name="config_hasVoocCharger">true</bool>
 
+    <!-- Paths to realme's vooc charging status file -->
+    <string name="config_VoocChargerStatusPaths" translatable="false">/sys/class/power_supply/battery/voocchg_ing</string>
+
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportScreenOffUdfps">true</bool>
 
