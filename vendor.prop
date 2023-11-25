@@ -137,6 +137,7 @@ ro.camera.attr.detect.enable=1
 ro.camera.temperature.limit=470
 camera.disable_zsl_mode=1
 persist.vendor.camera.eis.enable=1
+persist.vendor.camera.is_type=4
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
