@@ -19,6 +19,8 @@ ro.config.vc_call_vol_steps=7
 ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=2
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hw.aac.encoder=true
@@ -159,15 +161,6 @@ dalvik.vm.heaptargetutilization=0.75
 
 # Display post-processing
 ro.vendor.display.sensortype=2
-
-# Dolby
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.audio_fx.current=dolby \
-    vendor.audio.dolby.ds2.enabled=true \
-    vendor.audio.dolby.ds2.hardbypass=true \
-    ro.vendor.audio.dolby.dax.support=true
-    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-
 
 # DRM
 drm.service.enabled=true
