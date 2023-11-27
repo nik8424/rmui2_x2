@@ -515,7 +515,7 @@ PRODUCT_BOOT_JARS += \
 $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 
 # Google Basic apps
-$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 #Inherit Realme Camera
 # $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
