@@ -1,1 +1,4 @@
 allow kernel self:capability kill;
+
+# KernelSU
+dontaudit kernel self:capability dac_read_search;
