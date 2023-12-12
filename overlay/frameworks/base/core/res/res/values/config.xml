@@ -1648,7 +1648,4 @@
         See android.service.rotationresolver.RotationResolverService.
     -->
     <string name="config_defaultRotationResolverService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
-
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
 </resources>
