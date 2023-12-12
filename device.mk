@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/odm/,$(TARGET_COPY_OUT_ODM)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/vendor/,$(TARGET_COPY_OUT_VENDOR)/etc) \
+    $(LOCAL_PATH)/audio/o/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
@@ -183,6 +184,22 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # DotKiller
 PRODUCT_PACKAGES += \
     DotKiller
+
+# Dolby Manager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
+    $(LOCAL_PATH)/media/vendor/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.vendor.dolby.model=PAFM00 \
+    ro.vendor.dolby.device=OP46C3 \
+    ro.vendor.dolby.manufacturer=OPLUS \
+    ro.vendor.dolby.brand=OPLUS \
+    vendor.dolby.dap.param.tee=true
+
+PRODUCT_PACKAGES += \
+    DolbyManager
 
 # Enable whole-program R8 Java optimizations for SystemUI and system_server
 SYSTEM_OPTIMIZE_JAVA := true
@@ -489,6 +506,10 @@ PRODUCT_PACKAGES += \
     vndk_package \
     com.android.vndk.current.on_vendor
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
@@ -522,4 +543,4 @@ $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 # $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
 
 # Viper
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+# $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
