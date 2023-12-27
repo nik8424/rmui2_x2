@@ -1526,7 +1526,10 @@
     <bool name="config_hasVoocCharger">true</bool>
 
     <!-- Paths to realme's vooc charging status file -->
-    <string name="config_VoocChargerStatusPaths" translatable="false">/sys/class/power_supply/battery/voocchg_ing</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/voocchg_ing</string>
+
+    <!-- Expected value from fast charging status file  -->
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
 
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
