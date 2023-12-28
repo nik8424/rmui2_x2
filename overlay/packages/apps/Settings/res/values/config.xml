@@ -33,10 +33,9 @@
 
     <!-- Battery Health -->
     <bool name="config_supportBatteryHealth">true</bool>
-    <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full</string>
-    <string name="config_batCurCap">/sys/class/power_supply/battery/charge_counter</string>
-    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
-
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batteryChargeCycles">/sys/class/power_supply/battery/cycle_count</string>
+    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/battery/charge_full_design</string>
     <!-- For Ultra Power Saving -->
     <bool name="config_supportUltraPowerSaving">true</bool>
 </resources>
