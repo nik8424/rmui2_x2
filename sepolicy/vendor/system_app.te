@@ -19,7 +19,3 @@ allow system_app sysfs_oppo_display:dir search;
 allow system_app vendor_sysfs_graphics:file read;
 
 set_prop(system_app, default_prop)
-
-# Power
-allow system_app sysfs_battery_supply:dir { search };
-allow system_app sysfs_battery_supply:file { read open getattr };
