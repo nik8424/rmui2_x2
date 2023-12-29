@@ -325,6 +325,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
+    libstagefright_omx \
+    libstagefright_foundation \
     libminijail \
     libavservices_minijail \
     libavservices_minijail.vendor \
