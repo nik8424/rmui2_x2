@@ -328,3 +328,6 @@ MultitouchSettleInterval=1ms
 MultitouchMinDistance=1px
 TapInterval=1ms
 TapSlop=1px
+
+# Surfaceflinger properties
+ro.surface_flinger.enable_frame_rate_override=false
