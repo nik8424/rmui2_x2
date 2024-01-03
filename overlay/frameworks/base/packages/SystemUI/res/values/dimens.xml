@@ -30,4 +30,7 @@
     default that should be overridden by device-specific overlays. -->
     <dimen name="physical_power_button_center_screen_location_y">890px</dimen>
 	<dimen name="keyguard_indication_margin_bottom">15dp</dimen>
+
+    <!-- Biometric dialog corner radius -->
+    <dimen name="biometric_dialog_corner_size">@*android:dimen/config_dialogCornerRadius</dimen>
 </resources>
