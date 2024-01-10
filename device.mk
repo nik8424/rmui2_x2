@@ -560,4 +560,4 @@ $(call inherit-product-if-exists, vendor/realme/X2/X2-vendor.mk)
 # $(call inherit-product-if-exists, vendor/camera/X2/realmecamera.mk)
 
 # Viper
-# $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
