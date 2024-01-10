@@ -326,12 +326,23 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    libstagefright_omx \
     libstagefright_foundation \
+    libmedia_omx \
+    libmedia_omx.vendor \
     libminijail \
+    libminijail.vendor \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libstagefright_softomx.vendor
+    libstagefright_softomx.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_bufferqueue_helper \
+    libstagefright_bufferqueue_helper.vendor \
+    libstagefright_omx \
+    libstagefright_omx.vendor \
+    libstagefright_omx_utils \
+    libstagefright_omx_utils.vendor \
+    libstagefright_xmlparser \
+    libstagefright_xmlparser.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/odm/,$(TARGET_COPY_OUT_ODM)/etc) \
