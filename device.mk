@@ -185,22 +185,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     DotKiller
 
-# Dolby Manager
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
-    $(LOCAL_PATH)/media/vendor/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
-
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
-    ro.vendor.dolby.model=PAFM00 \
-    ro.vendor.dolby.device=OP46C3 \
-    ro.vendor.dolby.manufacturer=OPLUS \
-    ro.vendor.dolby.brand=OPLUS \
-    vendor.dolby.dap.param.tee=true
-
-PRODUCT_PACKAGES += \
-    DolbyManager
-
 # Enable whole-program R8 Java optimizations for SystemUI and system_server
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
@@ -519,10 +503,6 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 PRODUCT_PACKAGES += \
     vndk_package \
     com.android.vndk.current.on_vendor
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
