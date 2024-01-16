@@ -1,3 +1,4 @@
+# Dolby
 allow kernel self:capability kill;
 
 # KernelSU
