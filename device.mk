@@ -551,3 +551,6 @@ $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Basic Call Recording (BCR)
+$(call inherit-product, vendor/bcr/bcr.mk)
