@@ -429,7 +429,8 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # Rootdir
 PRODUCT_COPY_FILES += \
