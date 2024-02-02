@@ -135,6 +135,8 @@ HWUI_COMPILE_FOR_PERF := true
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
 
+# Malloc
+MALLOC_SVELTE := true
 
 # Media
 TARGET_USES_ION := true
