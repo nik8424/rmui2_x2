@@ -30,7 +30,4 @@
 
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
-
-    <!-- For Ultra Power Saving -->
-    <bool name="config_supportUltraPowerSaving">true</bool>
 </resources>
