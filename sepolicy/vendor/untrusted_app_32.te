@@ -1,0 +1,1 @@
+allow untrusted_app_32 sysfs_net:dir { search };
