@@ -96,6 +96,14 @@
         <transport>hwbinder</transport>
         <fqname>@2.2::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>vendor.display.color</name>
         <transport>hwbinder</transport>
