@@ -44,4 +44,7 @@
 
     <!-- Whether memory from app_info_settings is available or not. -->
     <bool name="config_show_app_info_settings_memory">true</bool>
+
+    <!-- Udfps fingerprint animation -->
+    <dimen name="udfps_animation_offset">5dp</dimen>
 </resources>
