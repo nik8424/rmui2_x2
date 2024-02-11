@@ -137,6 +137,7 @@ TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/
 
 # Malloc
 MALLOC_SVELTE := true
+MALLOC_SVELTE_FOR_LIBC32 := true
 
 # Media
 TARGET_USES_ION := true
