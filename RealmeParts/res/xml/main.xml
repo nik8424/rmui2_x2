@@ -47,8 +47,11 @@
             android:title="@string/reset_stats_title"
             android:summary="@string/reset_stats_summary" />
 
-
-        <Preference
+    </PreferenceCategory>
+    
+    <!-- Clear speaker  -->
+    <PreferenceCategory> 
+            <Preference
             android:key="clear_speaker"
             android:title="@string/clear_speaker_title"
             android:icon="@drawable/ic_speaker_cleaner_icon"
