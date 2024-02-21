@@ -22,7 +22,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-     <!-- Auto-brightness sensor type string -->
+    <!-- Auto-brightness sensor type string -->
     <string name="config_displayLightSensorType">"qti.sensor.wise_light"</string>
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
@@ -1532,75 +1532,16 @@
 	-->
 	<bool name="config_ui_enableFadingMarquee">true</bool>
 
-    <!-- Whether to cancel fingerprint operation if not idle -->
-    <bool name="config_fpCancelIfNotIdle">true</bool>
-
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_supportSmartPixels">true</bool>
-
-     <!-- Whether device has VOOC charging support -->
-    <bool name="config_hasVoocCharger">true</bool>
-
-    <!-- Paths to realme's vooc charging status file -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/voocchg_ing</string>
-
-    <!-- Expected value from fast charging status file  -->
-    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
-
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
     <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oppo_display/dimlayer_bl_en</string>
 
-    <!-- Whether devices suports in-display fingerprint when screen is off -->
-    <bool name="config_supportScreenOffUdfps">true</bool>
-
-     <!-- Pocket Lock -->
-    <bool name="config_pocketModeSupported">true</bool>
-    <bool name="config_pocketUseLightSensor">true</bool>
-
-<!--      Any package that has one of the package names defined below will be prevented -->
-<!--        from using specific sensors in order to stop battery drain -->
-    <string-array name="config_blockPackagesSensorDrain">
-        <item>com.whatsapp</item>
-        <item>com.gbwhatsapp</item>
-        <item>com.yowhatsapp</item>
-        <item>com.whatsapp.plus</item>
-        <item>org.telegram.messenger</item>
-        <item>org.telegram.messenger.plus</item>
-        <item>com.netease.cloudmusic</item>
-        <item>fm.xiami.main</item>
-        <item>com.netease.snailread</item>
-        <item>com.baidu.browser.apps</item>
-        <item>org.thunderdog.challegram</item>
-        <item>com.snapchat.android</item>
-        <item>com.facebook.orca</item>
-        <item>com.Slack</item>
-        <item>tugapower.codeaurora.browser</item>
-        <item>org.mozilla.firefox</item>
-        <item>com.android.chrome</item>
-        <item>com.amazon.mShop.android.shopping</item>
-        <item>com.google.android.inputmethod.latin</item>
-        <item>com.google.android.apps.plus</item>
-        <item>com.google.android.apps.maps</item>
-        <item>ru.ok.android</item>
-        <item>com.instagram.android.MainTabActivity</item>
-        <item>com.facebook.orca</item>
-        <item>com.facebook.orca.StartScreenActivity</item>
-        <item>com.spotify.music</item>
-        <item>com.spotify.music.MainActivity</item>
-        <item>com.android.vending</item>
-        <item>com.trtf.blue</item>
-        <item>com.truecaller</item>
-        <item>com.gaana</item>
-        <item>com.facebook.katana.LoginActivity</item>
-    </string-array>
-
     <!-- Boost Framework -->
     <bool name="config_supportsBoostFramework">true</bool>
 
-        <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-         manually by the user. Off by default, since the expected haptic feedback may not be
-         available on some devices. -->
+     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
+          manually by the user. Off by default, since the expected haptic feedback may not be
+          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- The default value for transition animation scale found in developer settings.

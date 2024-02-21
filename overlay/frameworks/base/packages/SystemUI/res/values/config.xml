@@ -18,7 +18,7 @@
 -->
 
 <!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
+    for different hardware and product builds. -->
 <resources>
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
@@ -36,15 +36,6 @@
     <integer name="config_maxVisibleNotificationIcons">5</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">5</integer>
 
-    <!-- Update battery info every second when device is charging -->
-    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
-
-    <!-- Charging info current divider, if needed -->
-    <integer name="config_currentInfoDivider" translatable="false">1</integer>
-
     <!-- Whether memory from app_info_settings is available or not. -->
     <bool name="config_show_app_info_settings_memory">true</bool>
-
-    <!-- Udfps fingerprint animation -->
-    <dimen name="udfps_animation_offset">5dp</dimen>
 </resources>
