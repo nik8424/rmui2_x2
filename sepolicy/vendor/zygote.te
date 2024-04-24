@@ -1,2 +1,1 @@
-
 allow zygote self:capability kill;
