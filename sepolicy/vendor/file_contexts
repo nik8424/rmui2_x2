@@ -33,6 +33,8 @@
 
 # # Power
 # /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.x2-libperfmgr                  u:object_r:hal_power_default_exec:s0
+# Power aidl stats
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                       u:object_r:hal_power_stats_default_exec:s0
 
 # Widevine
 /(vendor|odm)/bin/hw/android\.hardware\.drm@1\.3-service.widevine    u:object_r:vendor_hal_drm_widevine_exec:s0
