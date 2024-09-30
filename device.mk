@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libaudio-resampler \
+    libaudioroute.vendor \
     libtinycompress \
     libvolumelistener \
     tinymix
@@ -212,7 +213,8 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -258,6 +260,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    libhidlmemory.vendor \
     android.hidl.manager@1.0.vendor
 
 PRODUCT_PACKAGES += \
@@ -424,6 +427,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libjson \
     librmnetctl \
+    libsqlite.vendor:64 \
     libxml2 \
     libprotobuf-cpp-full \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
@@ -526,6 +530,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
+    libpng.vendor \
+    libprocessgroup.vendor \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk
 
