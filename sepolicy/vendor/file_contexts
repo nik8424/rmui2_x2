@@ -42,7 +42,7 @@
 # Oppo nv
 /data/opponvitems(/.*)?    u:object_r:vendor_radio_vendor_data_file:s0
 
-# MMC 
+# MMC
 /sys/devices/virtual/bdi/[0-999]+:[0-999]+/read_ahead_kb               u:object_r:vendor_sysfs_mmc_host:s0
 
 # SSR
