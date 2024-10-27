@@ -445,7 +445,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.oppo.rc
+    init.oppo.rc \
+    logcat.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
