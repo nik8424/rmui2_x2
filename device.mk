@@ -464,7 +464,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/nxp/opensource/sn100x
+    vendor/nxp/opensource/sn100x \
+    bootable/deprecated-ota
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
@@ -493,6 +494,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/textclassifier/lang_id.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/lang_id.model \
     $(LOCAL_PATH)/textclassifier/textclassifier.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.universal.model
 
+# Updater
+AB_OTA_UPDATER := false
 
 # USB
 PRODUCT_PACKAGES += \
