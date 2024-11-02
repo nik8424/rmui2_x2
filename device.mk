@@ -552,3 +552,6 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Basic Call Recording (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
+
+PRODUCT_PACKAGES += \
+    wait_for_strongbox
