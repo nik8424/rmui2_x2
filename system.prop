@@ -1,7 +1,3 @@
-# ART
-#dalvik.vm.dex2oat-filter=everything
-#dalvik.vm.image-dex2oat-filter=everything
-
 # Audio
 ro.config.media_vol_default=8
 ro.config.media_vol_steps=25
@@ -35,7 +31,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 dalvik.vm.systemuicompilerfilter=speed
 pm.dexopt.boot=verify
 pm.dexopt.install=speed-profile
-dalvik.vm.image-dex2oat-filter=speed
+#dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
