@@ -37,5 +37,5 @@ BUILD_FINGERPRINT := "google/husky/husky:14/UQ1A.240205.004.B1/11318806:user/rel
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
-# Build type
-lineage_BUILD_VARIANT := gapps
+# Build type GMS
+WITH_GMS := true
