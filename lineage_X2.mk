@@ -19,7 +19,7 @@ $(call inherit-product, device/realme/X2/device.mk)
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-#TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 
@@ -39,3 +39,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Build type GMS
 WITH_GMS := true
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="linux.xd"
+
+# Wether to ship lawnchair launcher
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
