@@ -31,7 +31,11 @@ PRODUCT_MODEL := realme X2
 PRODUCT_MANUFACTURER := realme
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="RMX1993L1-user 11 RKQ1.201112.002 1639416071279 release-keys"
+    BuildDesc="RMX1993L1-user 11 RKQ1.201112.002 1639416071279 release-keys" \
+    DeviceName=X2 \
+    DeviceProduct=X2 \
+    SystemDevice=X2 \
+    SystemName=X2
 
 BUILD_FINGERPRINT := "google/husky/husky:14/UQ1A.240205.004.B1/11318806:user/release-keys"
 
