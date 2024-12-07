@@ -21,10 +21,6 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 
-# Dexopt
-pm.dexopt.first-boot=quicken
-pm.dexopt.bg-dexopt=everything
-
 # Zram
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
