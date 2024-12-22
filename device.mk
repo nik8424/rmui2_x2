@@ -510,9 +510,9 @@ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.
 PRODUCT_PRODUCT_VNDK_VERSION := current
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
-PRODUCT_PACKAGES += \
-    vndk_package \
-    com.android.vndk.current.on_vendor
+# PRODUCT_PACKAGES += \
+#     vndk_package \
+#     com.android.vndk.current.on_vendor
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
@@ -558,5 +558,5 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Basic Call Recording (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-PRODUCT_PACKAGES += \
-    wait_for_strongbox
+# PRODUCT_PACKAGES += \
+#     wait_for_strongbox
