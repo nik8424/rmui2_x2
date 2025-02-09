@@ -161,8 +161,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.allocator-service \
-    gralloc.sm6150 \
-    hwcomposer.sm6150 \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
@@ -306,12 +304,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
     libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
     libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
