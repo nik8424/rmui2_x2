@@ -139,6 +139,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
