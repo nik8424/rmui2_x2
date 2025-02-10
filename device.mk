@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
+    libstagefright_softomx_plugin.vendor \
     libstagefrighthw \
     libstagefright_foundation \
     libmedia_omx \
