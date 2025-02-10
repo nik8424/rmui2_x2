@@ -498,6 +498,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/textclassifier/lang_id.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/lang_id.model \
     $(LOCAL_PATH)/textclassifier/textclassifier.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.universal.model
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Updater
 AB_OTA_UPDATER := false
 
