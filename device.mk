@@ -447,22 +447,23 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    logcat.rc \
-    init.qcom.post_boot.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.sensors.sh \
-    ueventd.rc \
-    fstab.qcom \
-    init.target.rc \
-    init.qcom.rc \
-    init.oppo.display.rc \
     init.oppo.rc \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.class_main.sh \
-    init.qcom.class_main.sh \
-    init.qcom.factory.rc
+    logcat.rc 
+    # init.qcom.post_boot.sh \
+    # init.qcom.early_boot.sh \
+    # init.qcom.sensors.sh \
+    # ueventd.rc \
+    # fstab.qcom \
+    # init.target.rc \
+    # init.qcom.rc \
+    # init.oppo.display.rc \
+    # init.oppo.rc \
+    # init.qcom.sh \
+    # init.qcom.usb.rc \
+    # init.qcom.usb.sh \
+    # init.class_main.sh \
+    # init.qcom.class_main.sh \
+    # init.qcom.factory.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
